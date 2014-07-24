@@ -1,0 +1,11 @@
+{
+  "name": "Hood.ie",
+  "dependencies": {
+    "jquery": "~2.1.1",
+    "lodash": "~2.4.1",
+    "normalize-scss": "3.0.1",
+    "jquery.scrollTo": "~1.4.11",
+    "prism": "git@github.com:LeaVerou/prism.git#gh-pages",
+    "bootstrap-sass-official": "~3.2.0"
+  }
+}

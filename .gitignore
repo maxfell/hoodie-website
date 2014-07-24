@@ -1,0 +1,5 @@
+.sass-cache
+.grunt
+dist
+node_modules
+src/components
