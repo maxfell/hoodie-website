@@ -1,3 +1,80 @@
 /*Import the main Hoodie Library*/
 
 @import "hoodie.scss";
+
+$swatchDiameter: 120px;
+
+.swatch{
+  width: $swatchDiameter;
+  height: $swatchDiameter;
+  border-radius: 50%;
+  display: inline-block;
+  color: $hoodie-white;
+  font-size: $hoodie-font-size;
+  font-family: 'Bariol';
+  font-weight: 500;
+  line-height: $swatchDiameter;
+  text-align: center;
+  margin: .5em;
+  &.dark-text{
+    color: $hoodie-nearblack;
+  }
+  &.dark-border{
+    color: $hoodie-nearblack;
+    box-shadow: inset 0px 0px 0px 4px $hoodie-nearblack;
+  }
+  &.hoodie-blue{
+    background-color: $hoodie-blue;
+  }
+  &.hoodie-green{
+    background-color: $hoodie-green;
+  }
+  &.hoodie-yellow{
+    background-color: $hoodie-yellow;
+  }
+  &.hoodie-orange{
+    background-color: $hoodie-orange;
+  }
+  &.hoodie-brown{
+    background-color: $hoodie-brown;
+  }
+  &.hoodie-red{
+    background-color: $hoodie-red;
+  }
+  &.hoodie-paleblue{
+    background-color: $hoodie-paleblue;
+  }
+  &.hoodie-palegreen{
+    background-color: $hoodie-palegreen;
+  }
+  &.hoodie-paleyellow{
+    background-color: $hoodie-paleyellow;
+  }
+  &.hoodie-paleorange{
+    background-color: $hoodie-paleorange;
+  }
+  &.hoodie-palebrown{
+    background-color: $hoodie-palebrown;
+  }
+  &.hoodie-palered{
+    background-color: $hoodie-palered;
+  }
+  &.hoodie-white{
+    background-color: $hoodie-white;
+  }
+  &.hoodie-darkgrey{
+    background-color: $hoodie-darkgrey;
+  }
+  &.hoodie-nearblack{
+    background-color: $hoodie-nearblack;
+  }
+  &.hoodie-mediumbrown{
+    background-color: $hoodie-mediumbrown;
+  }
+  &.hoodie-lightbeige{
+    background-color: $hoodie-lightbeige;
+  }
+  &.hoodie-lightgrey{
+      background-color: $hoodie-lightgrey;
+  }
+}
