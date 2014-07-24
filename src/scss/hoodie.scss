@@ -1,0 +1,112 @@
+//
+// Variables
+// --------------------------------------------------
+
+
+//== Colors
+//
+//## These are the official Hoodie colors
+
+// Hoodie colors
+
+$hoodie-blue:     #312783;
+$hoodie-green:    #0B8E36;
+$hoodie-yellow:   #F9B233;
+$hoodie-orange:   #E94E1B;
+$hoodie-brown:    #693C10;
+$hoodie-red:      #BE1522;
+
+// Hoodie pale colors
+
+$hoodie-paleblue:       #DCE7EA;
+$hoodie-palegreen:      #BFD4B4;
+$hoodie-paleyellow:     #FAF1B0;
+$hoodie-paleorange:     #F9D4A2;
+$hoodie-palebrown:      #C5B09A;
+$hoodie-palered:        #ECAC8B;
+
+// Monochromatic colors (from light to dark)
+
+$hoodie-white:          #FFFFFF;
+$hoodie-lightbeige:     #F8F5F3;
+$hoodie-lightgrey:      #807E7B;
+$hoodie-darkgrey:       #414040;
+$hoodie-mediumbrown:    #373435;
+$hoodie-nearblack:      #282726;
+
+//== Typography
+//
+//## Font, line-height, and color for body text, headings, and more.
+
+@font-face {
+  font-family: 'Bariol';
+  src: url('../assets/fonts/bariol_bold-webfont.eot');
+  src: url('../assets/fonts/bariol_bold-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../assets/fonts/bariol_bold-webfont.woff') format('woff'),
+       url('../assets/fonts/bariol_bold-webfont.ttf') format('truetype'),
+       url('../assets/fonts/bariol_bold-webfont.svg#bariol_boldbold') format('svg');
+  font-weight: 500;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'Bariol';
+  src: url('../assets/fonts/bariol_regular-webfont.eot');
+  src: url('../assets/fonts/bariol_regular-webfont.eot?#iefix') format('embedded-opentype'),
+       url('../assets/fonts/bariol_regular-webfont.woff') format('woff'),
+       url('../assets/fonts/bariol_regular-webfont.ttf') format('truetype'),
+       url('../assets/fonts/bariol_regular-webfont.svg#bariol_regularregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+//
+// Bootstrap
+// --------------------------------------------------
+
+//==Bootstrap Sources
+//
+//## Import the core bootstrap files
+@import "../components/bootstrap-sass-official/assets/stylesheets/bootstrap/_variables";
+@import "../components/bootstrap-sass-official/assets/stylesheets/bootstrap/mixins";
+
+@import "../components/bootstrap-sass-official/assets/stylesheets/bootstrap/normalize";
+@import "../components/bootstrap-sass-official/assets/stylesheets/bootstrap/print";
+
+@import "../components/bootstrap-sass-official/assets/stylesheets/bootstrap/scaffolding";
+@import "../components/bootstrap-sass-official/assets/stylesheets/bootstrap/type";
+@import "../components/bootstrap-sass-official/assets/stylesheets/bootstrap/code";
+@import "../components/bootstrap-sass-official/assets/stylesheets/bootstrap/grid";
+@import "../components/bootstrap-sass-official/assets/stylesheets/bootstrap/tables";
+@import "../components/bootstrap-sass-official/assets/stylesheets/bootstrap/forms";
+@import "../components/bootstrap-sass-official/assets/stylesheets/bootstrap/buttons";
+
+//==Variables
+//
+//## Rewires some bootstrap variables
+
+$gray-darker:            $hoodie-nearblack;
+$gray-dark:              $hoodie-darkgrey;
+$gray:                   $hoodie-mediumbrown;
+$gray-light:             $hoodie-lightgrey;
+$gray-lighter:           $hoodie-lightbeige;
+
+$brand-primary:         $hoodie-blue;
+$brand-success:         $hoodie-green;
+$brand-info:            $hoodie-orange;
+$brand-warning:         $hoodie-yellow;
+$brand-danger:          $hoodie-red;
+
+$text-color:            $hoodie-nearblack;
+
+$font-family-sans-serif:  Bariol, "Helvetica Neue", Helvetica, Arial, sans-serif;
+$font-size-base: 1.4rem;
+
+//==Styling
+//
+//## Default Hoodie look
+
+body{
+    font-family: $font-family-sans-serif;
+}

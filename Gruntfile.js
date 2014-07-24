@@ -66,7 +66,7 @@ module.exports = function(grunt) {
       css: {
         src: ['src/components/prism/themes/prism.css', 'dist/css/main.min.css'],
         dest: 'dist/css/main.min.css'
-      }
+    }
     },
 
     sass: {
@@ -142,7 +142,7 @@ module.exports = function(grunt) {
   grunt.registerTask('minify', ['jshint', 'uglify', 'cssmin', 'copy']);
   grunt.registerTask('onChange', ['newer:jshint', 'newer:sass', 'newer:autoprefixer:single_file', 'concat', 'newer:copy', 'notify:watch']);
   grunt.registerTask('build', ['clean', 'onChange',]);
-  grunt.registerTask('server', ['clean', 'connect', 'onChange', 'watch']);
+  grunt.registerTask('serve', ['clean', 'connect', 'onChange', 'watch']);
   grunt.registerTask('deploy', ['build', 'gh-pages']);
 
 };
