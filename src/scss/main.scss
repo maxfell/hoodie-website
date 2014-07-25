@@ -1,8 +1,11 @@
-/*Import the main Hoodie Library*/
-
+//Always import the main Hoodie Library
 @import "hoodie.scss";
 
-$swatchDiameter: 120px;
+//
+// Swatches
+// --------------------------------------------------
+
+$swatchDiameter: 90px;
 
 .swatch{
   width: $swatchDiameter;
@@ -10,7 +13,7 @@ $swatchDiameter: 120px;
   border-radius: 50%;
   display: inline-block;
   color: $hoodie-white;
-  font-size: $hoodie-font-size;
+  font-size: 3*($hoodie-font-size/4);
   font-family: 'Bariol';
   font-weight: 500;
   line-height: $swatchDiameter;

@@ -3,7 +3,7 @@
 $$$$$..$$$$$.$$$$$$$$$$$b .$$$$$$$$$$$b $$$$$$$$$$b $$$$$$$$$$$$$$$P'
 $$$$$$$$$$$$d$$$$$$$$$$$$bd$$$$$$$$$$$$b$$$$$$$$$$$b$$$$$$$$$$$$$$$b.
 $$$$$$$$$$$$Q$$$$$$$$$$$$PQ$$$$$$$$$$$$P$$$$$$$$$$$P$$$$$$$$$$$$$$$P'
-$$$$$´`$$$$$'$$$$$$$$$$$$''$$$$$$$$$$$$'$$$$$$$$$$P $$$$$$$$$$$$$$$b.
+$$$$$  $$$$$'$$$$$$$$$$$$''$$$$$$$$$$$$'$$$$$$$$$$P $$$$$$$$$$$$$$$b.
 'Q$P'  'Q$P'  'Q$$$$$$P'    'Q$$$$$$P'  'Q$$$$$$$P  'Q$P''Q$$$$$$$$P'
 
 Base CSS
@@ -59,7 +59,6 @@ $hoodie-nearblack:      #282726;
        url('../assets/fonts/bariol_bold-webfont.svg#bariol_boldbold') format('svg');
   font-weight: 500;
   font-style: normal;
-
 }
 
 @font-face {
@@ -100,9 +99,22 @@ $text-color:            $hoodie-nearblack;
 $font-family-sans-serif:  Bariol, "Helvetica Neue", Helvetica, Arial, sans-serif;
 $font-size-base: $hoodie-font-size;
 
-$container-large-desktop: $container-desktop;
-$container-lg:  $container-desktop;
-$screen-lg: $container-desktop;
+$grid-gutter-width:         30px !default;
+
+// Small screen / tablet
+$container-tablet:             ((720px + $grid-gutter-width)) !default;
+//** For `$screen-sm-min` and up.
+$container-sm:                 $container-tablet !default;
+
+// Medium screen / desktop
+$container-desktop:            ((720px + $grid-gutter-width)) !default;
+//** For `$screen-md-min` and up.
+$container-md:                 $container-desktop !default;
+
+// Large screen / wide desktop
+$container-large-desktop:      ((720px + $grid-gutter-width)) !default;
+//** For `$screen-lg-min` and up.
+$container-lg:                 $container-large-desktop !default;
 
 //==Bootstrap Sources
 //
@@ -121,6 +133,10 @@ $screen-lg: $container-desktop;
 @import "../components/bootstrap-sass-official/assets/stylesheets/bootstrap/forms";
 @import "../components/bootstrap-sass-official/assets/stylesheets/bootstrap/buttons";
 
+//
+// General Styling
+// --------------------------------------------------
+
 //==Styling
 //
 //## Default Hoodie look
@@ -129,4 +145,35 @@ body{
     font-family: $font-family-sans-serif;
     font-size: $hoodie-font-size;
     color: $hoodie-nearblack;
+}
+
+.container{
+    margin-left: 20%;
+    aside {
+        float: left;
+        width: 20%;
+        margin-left: -25%;
+        font-size: 3*($hoodie-font-size/4);
+        line-height: 1.8;
+        color: $hoodie-lightgrey;
+    }
+    footer{
+        font-size: 3*($hoodie-font-size/4);
+	    color: $hoodie-lightgrey;
+        text-transform: upcase;
+    }
+
+}
+
+@media screen and (max-width: 700px) {
+
+    .container{
+        margin-left: 0;
+        aside {
+            float: none;
+            width: auto;
+            margin: 0 0 20px 0;
+            line-height: 1.5;
+        }
+    }
 }
