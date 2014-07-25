@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Hoodie Patterns of Style and Markup</title>
+
+    <!-- Bootstrap -->
+    <link href="css/main.min.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+
+    <div class="container">
+        <h1>Hello there, Hoodies!</h1>
+        <p>This is a living styleguide for all elements you can find in the hoodie base CSS.</p>
+    </div>
+
+    <div class="container">
+
+        <h2>Typography</h2>
+
+        <p>We are using Bariol 16pt as our base font.</p>
+
+        <aside>
+          Create lighter, secondary text in any heading with a generic <code>&#60;small&#62;</code> tag or the <code>.small</code> class.<br>Oh, I'm an <code>&#60;aside&#62;</code> btw!
+        </aside>
+
+        <div class="example">
+            <h1>h1. Hoodie oh yeah! <small>This is a <strong>h1</strong> headline</small></h1>
+            <h2>h2. Hoodie oh yeah! <small>This is a <strong>h2</strong> headline</small></h2>
+            <h3>h3. Hoodie oh yeah! <small>This is a <strong>h3</strong> headline</small></h3>
+            <h4>h4. Hoodie oh yeah! <small>This is a <strong>h4</strong> headline</small></h4>
+            <h5>h5. Hoodie oh yeah! <small>This is a <strong>h5</strong> headline</small></h5>
+        </div>
+
+        <aside>
+          Hoodie's global default font-size is 16pt, with a line-height of 1.428. This is applied to the <code>&#60;body&#62;</code> and all paragraphs.
+        </aside>
+
+        <div class="example">
+            <p>This is a paragraph. Lorem ipsum dolor sit amet, <strong>with bold text</strong> adipisicing elit. Vero ea qui cumque perspiciatis reiciendis <em>and italics</em> eveniet sint neque facere, voluptatibus <a href="#">and a link</a> atque totam sit doloremque quod ipsa ratione porro possimus excepturi officiis? Vero ea qui <mark>Wow, this one is highlighted</mark> cumque perspiciatis reiciendis eveniet sint neque facere, voluptatibus!</p>
+
+
+            <footer>
+                This is a footer. Posted August 22, 2011
+            </footer>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <h2>Lists</h2>
+        <h3>Unordered</h3>
+        <p>A list of items in which the order does not explicitly matter.</p>
+
+        <aside>On an unrelated note: These also happen to be our favourite animals!</aside>
+
+        <div class="example">
+            <ul>
+                <li>Raccoon</li>
+                <li>Squirrel</li>
+                <li>Bear
+                    <ul>
+                        <li>Skinny Bear</li>
+                        <li>Big Bear</li>
+                    </ul>
+                </li>
+                <li>Llama/Alpaca</li>
+                <li>Fox</li>
+                <li>Chicken</li>
+            </ul>
+        </div>
+
+        <h3>Ordered</h3>
+        <p>A list of items in which the order does explicitly matter.</p>
+
+        <div class="example">
+            <ol>
+                <li>Find the animal</li>
+                <li>Make it an offer it cannot decline</li>
+                <li>Arrange flights to Berlin
+                    <ol>
+                        <li>or Dortmund</li>
+                        <li>or Zurich</li>
+                        <li>or Sheffield</li>
+                    </ol>
+                </li>
+                <li>Make it sign the contract</li>
+                <li>Print out a little employee badge</li>
+                <li>Knit a hoodie in its size</li>
+                <li>Profit!</li>
+            </ol>
+        </div>
+
+    </div>
+
+    <div class="container">
+
+        <h2>Colors</h2>
+
+        <p>These are the official Hoodie colors derived from the logo. Note: These are rarely used to style other elements, since this approach has proved quite limiting. You'll notice that, when used together, they frequently clash with everything else, and even with each other. </p>
+
+        <div class="swatches center">
+            <div class="swatch hoodie-blue">#312783</div>
+            <div class="swatch hoodie-green">#0B8E36</div>
+            <div class="swatch hoodie-yellow">#F9B233</div>
+            <div class="swatch hoodie-orange">#E94E1B</div>
+            <div class="swatch hoodie-brown">#693C10</div>
+            <div class="swatch hoodie-red">#BE1522</div>
+        </div>
+
+        <p>These are the desaturated colours used from Summer 2014 onward.<br><br>
+
+Note: These are rarely used to style other elements, since this approach has proved quite limiting. You'll notice that, when used together, they frequently clash with everything else, and even with each other. </p>
+
+        <div class="swatches center">
+            <div class="swatch hoodie-paleblue">#DCE7EA</div>
+            <div class="swatch hoodie-palegreen">#BFD4B4</div>
+            <div class="swatch hoodie-paleyellow">#FAF1B0</div>
+            <div class="swatch hoodie-paleorange">#F9D4A2</div>
+            <div class="swatch hoodie-palebrown">#C5B09A</div>
+            <div class="swatch hoodie-palered">#ECAC8B</div>
+        </div>
+
+        <p>Grey colors:</p>
+
+        <div class="swatches center">
+            <div class="swatch hoodie-nearblack">#282726</div>
+            <div class="swatch hoodie-darkgrey">#414040</div>
+            <div class="swatch hoodie-mediumbrown">#373435</div>
+            <div class="swatch hoodie-lightgrey">#807E7B</div>
+            <div class="swatch hoodie-lightbeige dark-border">#F8F5F3</div>
+            <div class="swatch hoodie-white dark-border">#FFFFFF</div>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <h2>Code</h2>
+        <p>We all love code, don't we? Let's add a little section about it, shall we?</p>
+
+        <h3>Inline code</h3>
+        <div class="example">
+            Inline code snippets can be made using the <code>&lt;code&gt;</code> tag.
+        </div>
+
+        <h3>User input</h3>
+        <p>I don't know if we ever need it, but we have it. Just use the <code>&lt;kbd&gt;</code> tag.</p>
+        <div class="example">
+            To switch directories, type <kbd>cd</kbd> followed by the name of the directory.
+        </div>
+
+        <h3>A basic code block</h3>
+        <p>Basic, unstyled code blocks can be made using the <code>&lt;pre&gt;</code> tag.</p>
+        <div class="example">
+            <pre>&lt;p&gt;A lousy sample text right here...&lt;/p&gt;</pre>
+        </div>
+
+        <h3>Output</h3>
+        <p>You can highligh output using the <code>&lt;samp&gt;</code> tag.</p>
+        <div class="example">
+            <samp>This text is meant to be treated as sample output from a computer program.</samp>
+        </div>
+    </div>
+  </body>
+</html>
