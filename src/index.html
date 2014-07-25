@@ -18,9 +18,11 @@
   </head>
   <body>
 
-    <div class="container">
-        <h1>Hello there, Hoodies!</h1>
-        <p>This is a living styleguide for all elements you can find in the hoodie base CSS.</p>
+    <div class="container-fluid doc-photo">
+        <div class="container">
+            <h1>Hello there, Hoodies!</h1>
+            <p>This is a living styleguide for all elements you can find in the hoodie base CSS.</p>
+        </div>
     </div>
 
     <div class="container">
@@ -158,17 +160,61 @@ Note: These are rarely used to style other elements, since this approach has pro
             To switch directories, type <kbd>cd</kbd> followed by the name of the directory.
         </div>
 
-        <h3>A basic code block</h3>
-        <p>Basic, unstyled code blocks can be made using the <code>&lt;pre&gt;</code> tag.</p>
-        <div class="example">
-            <pre>&lt;p&gt;A lousy sample text right here...&lt;/p&gt;</pre>
-        </div>
-
         <h3>Output</h3>
         <p>You can highligh output using the <code>&lt;samp&gt;</code> tag.</p>
         <div class="example">
             <samp>This text is meant to be treated as sample output from a computer program.</samp>
         </div>
+
+        <h3>Styled code</h3>
+        <p>All right, back to the cool things: You can add syntax highlighted code by putting it inside <code>&lt;pre&gt;&lt;code class="language-<em>language</em>"&gt;&lt;/code&gt;&lt;/pre&gt;</code> tags.</p>
+        <p>The following languages are supported:
+        <ul>
+            <li><code>markup</code> <em>(that's html)</em></li>
+            <li><code>css</code> and <code>sass</code></li>
+            <li><code>javascript</code> and <code>coffeescript</code></li>
+            <li><code>HTTP</code> <small class="text-muted"><em>Hold on smartypants, that's definitely not a language!</em></small></li>
+            <li><a href="http://prismjs.com">and many more&trade;</a></li>
+        </ul>
+        Please make sure you don't overuse styled code as it adds up loading time. Thanks!
+        </p>
+
+        <div class="example">
+
+            <pre><code class="language-javascript">// add a new object
+var type = 'task';
+var attributes = {status: 'open'};
+hoodie.store.add(type, attributes)
+  .done(function (newObject) {});
+
+// Load all objects of one type, also belonging to the current user
+var type = 'task';
+hoodie.store.findAll(type)
+  .done(function (objects) {});
+
+// findAll also accepts a function as an argument. If that function returns true for an object in the store, it will be returned. This effectively lets you write complex queries for the store. In this simple example, assume all of our todo tasks have a key "status", and we want to find all unfinished tasks:
+hoodie.store.findAll(function(object){
+  if(object.type === "task" && object.status === "open"){
+    return true;
+  }
+}).done(function (objects) {});
+
+// removeAll, like findAll, also accepts a function as an argument. If that function returns true for an object in the store, it will be removed. Assuming all of our todo tasks have a key "status", and we want to remove all completed tasks:
+hoodie.store.removeAll(function(object){
+  if(object.type === "task" && object.status === "completed"){
+    return true;
+  }
+}).done(function (objects) {});
+          </code></pre>
+
     </div>
+    <div class="content">
+        <h2>Attribution</h2>
+        <p>Tons of inspiration taken from <a href="http://pea.rs">Pears</a>, <a href="http://alistapart.com/about/style-guide#code">A List Apart</a>, and <a href="https://www.flickr.com/photos/116240988@N08/14660900841/in/set-72157645297625167">Alex</a>.</p><br>
+    </div>
+</div>
+
+    <script src="index.min.js"></script>
+
   </body>
 </html>

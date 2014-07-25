@@ -112,7 +112,7 @@ module.exports = function(grunt) {
         src: ['*.html', 'assets/**/*'],
         dest: 'dist/',
         filter: 'isFile'
-      },
+      }
     },
 
     'gh-pages': {

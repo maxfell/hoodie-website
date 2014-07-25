@@ -2,7 +2,7 @@
 @import "hoodie.scss";
 
 //
-// Swatches 
+// Swatches
 // --------------------------------------------------
 
 $swatchDiameter: 90px;
@@ -103,4 +103,30 @@ $swatchDiameter: 90px;
 	text-transform: uppercase;
 	letter-spacing: 1px;
 	content:"Example"
+}
+
+.doc-photo{
+    background-color: $hoodie-blue;
+    background-image: url(../assets/images/hoodie_logo_small.png);
+    color: $hoodie-paleblue;
+    padding: 2em;
+}
+
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) {
+.doc-photo{
+    background-image: url(../assets/images/hoodie_logo_small@2x.png);
+    background-size: 95px;
+}
+}
+
+@media screen and (max-width: 700px) {
+    .doc-photo{
+        padding: 1em;
+    }
 }
