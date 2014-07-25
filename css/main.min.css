@@ -3021,3 +3021,9 @@ pre, samp {
   letter-spacing: 1px;
   content: "Example";
 }
+
+.doc-photo {
+  background: #312783;
+  color: #dce7ea;
+  padding: 2em;
+}
