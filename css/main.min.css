@@ -3149,7 +3149,8 @@ pre[class*="language-"] {
 }
 
 .doc-photo {
-  background: #312783;
+  background-color: #312783;
+  background-image: url(../assets/images/hoodie_logo_small.png);
   color: #dce7ea;
   padding: 2em;
 }
