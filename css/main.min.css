@@ -2896,6 +2896,10 @@ pre, samp {
   font-size: 12pt;
 }
 
+.container-fluid .container {
+  padding-left: 0;
+}
+
 .container {
   margin-left: 20%;
 }
@@ -2914,6 +2918,10 @@ pre, samp {
 }
 
 @media screen and (max-width: 700px) {
+  .container-fluid {
+    padding: 15px;
+  }
+
   .container {
     margin-left: 0;
   }
@@ -3026,4 +3034,10 @@ pre, samp {
   background: #312783;
   color: #dce7ea;
   padding: 2em;
+}
+
+@media screen and (max-width: 700px) {
+  .doc-photo {
+    padding: 1em;
+  }
 }
