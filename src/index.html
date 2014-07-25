@@ -19,19 +19,87 @@
   <body>
 
     <div class="container">
+        <h1>Hello there, Hoodies!</h1>
+        <p>This is a living styleguide for all elements you can find in the hoodie base CSS.</p>
+    </div>
 
-        <h1>Hello there, Hoodies!!</h1>
+    <div class="container">
+
         <h2>Typography</h2>
 
+        <p>We are using Bariol 16pt as our base font.</p>
+
         <aside>
-          This is aside text lorem ipsum dolor sit amet consectetur adipisicing.
+          Create lighter, secondary text in any heading with a generic <code>&#60;small&#62;</code> tag or the <code>.small</code> class.<br>Oh, I'm an <code>&#60;aside&#62;</code> btw!
         </aside>
 
-        <p>Lorem ipsum dolor sit amet, <strong>consectetur</strong> adipisicing elit. Vero ea qui cumque perspiciatis reiciendis eveniet sint neque facere, voluptatibus atque totam sit doloremque quod ipsa ratione porro possimus excepturi officiis? Vero ea qui cumque perspiciatis reiciendis eveniet sint neque facere, voluptatibus!</p>
+        <div class="example">
+            <h1>h1. Hoodie oh yeah! <small>This is a <strong>h1</strong> headline</small></h1>
+            <h2>h2. Hoodie oh yeah! <small>This is a <strong>h2</strong> headline</small></h2>
+            <h3>h3. Hoodie oh yeah! <small>This is a <strong>h3</strong> headline</small></h3>
+            <h4>h4. Hoodie oh yeah! <small>This is a <strong>h4</strong> headline</small></h4>
+            <h5>h5. Hoodie oh yeah! <small>This is a <strong>h5</strong> headline</small></h5>
+        </div>
 
-        <footer>
-		    Posted August 22, 2011
-	    </footer>
+        <aside>
+          Hoodie's global default font-size is 16pt, with a line-height of 1.428. This is applied to the <code>&#60;body&#62;</code> and all paragraphs.
+        </aside>
+
+        <div class="example">
+            <p>This is a paragraph. Lorem ipsum dolor sit amet, <strong>with bold text</strong> adipisicing elit. Vero ea qui cumque perspiciatis reiciendis <em>and italics</em> eveniet sint neque facere, voluptatibus <a href="#">and a link</a> atque totam sit doloremque quod ipsa ratione porro possimus excepturi officiis? Vero ea qui <mark>Wow, this one is highlighted</mark> cumque perspiciatis reiciendis eveniet sint neque facere, voluptatibus!</p>
+
+
+            <footer>
+                This is a footer. Posted August 22, 2011
+            </footer>
+        </div>
+
+    </div>
+
+    <div class="container">
+        <h2>Lists</h2>
+        <h3>Unordered</h3>
+        <p>A list of items in which the order does not explicitly matter.</p>
+
+        <aside>On an unrelated note: These also happen to be our favourite animals!</aside>
+
+        <div class="example">
+            <ul>
+                <li>Raccoon</li>
+                <li>Squirrel</li>
+                <li>Bear
+                    <ul>
+                        <li>Skinny Bear</li>
+                        <li>Big Bear</li>
+                    </ul>
+                </li>
+                <li>Llama/Alpaca</li>
+                <li>Fox</li>
+                <li>Chicken</li>
+            </ul>
+        </div>
+
+        <h3>Ordered</h3>
+        <p>A list of items in which the order does explicitly matter.</p>
+
+        <div class="example">
+            <ol>
+                <li>Find the animal</li>
+                <li>Make it an offer it cannot decline</li>
+                <li>Arrange flights to Berlin
+                    <ol>
+                        <li>or Dortmund</li>
+                        <li>or Zurich</li>
+                        <li>or Sheffield</li>
+                    </ol>
+                </li>
+                <li>Make it sign the contract</li>
+                <li>Print out a little employee badge</li>
+                <li>Knit a hoodie in its size</li>
+                <li>Profit!</li>
+            </ol>
+        </div>
+
     </div>
 
     <div class="container">
@@ -73,6 +141,34 @@ Note: These are rarely used to style other elements, since this approach has pro
             <div class="swatch hoodie-white dark-border">#FFFFFF</div>
         </div>
 
+    </div>
+
+    <div class="container">
+        <h2>Code</h2>
+        <p>We all love code, don't we? Let's add a little section about it, shall we?</p>
+
+        <h3>Inline code</h3>
+        <div class="example">
+            Inline code snippets can be made using the <code>&lt;code&gt;</code> tag.
+        </div>
+
+        <h3>User input</h3>
+        <p>I don't know if we ever need it, but we have it. Just use the <code>&lt;kbd&gt;</code> tag.</p>
+        <div class="example">
+            To switch directories, type <kbd>cd</kbd> followed by the name of the directory.
+        </div>
+
+        <h3>A basic code block</h3>
+        <p>Basic, unstyled code blocks can be made using the <code>&lt;pre&gt;</code> tag.</p>
+        <div class="example">
+            <pre>&lt;p&gt;A lousy sample text right here...&lt;/p&gt;</pre>
+        </div>
+
+        <h3>Output</h3>
+        <p>You can highligh output using the <code>&lt;samp&gt;</code> tag.</p>
+        <div class="example">
+            <samp>This text is meant to be treated as sample output from a computer program.</samp>
+        </div>
     </div>
   </body>
 </html>
