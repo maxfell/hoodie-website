@@ -2918,10 +2918,6 @@ pre, samp {
 }
 
 @media screen and (max-width: 700px) {
-  .container-fluid {
-    padding: 15px;
-  }
-
   .container {
     margin-left: 0;
   }
@@ -2930,6 +2926,28 @@ pre, samp {
     width: auto;
     margin: 0 0 20px 0;
     line-height: 1.5;
+  }
+
+  h1 small,
+  h1 .small, .h1 small,
+  .h1 .small,
+  h2 small,
+  h2 .small, .h2 small,
+  .h2 .small,
+  h3 small,
+  h3 .small, .h3 small,
+  .h3 .small,
+  h4 small,
+  h4 .small, .h4 small,
+  .h4 .small,
+  h5 small,
+  h5 .small, .h5 small,
+  .h5 .small,
+  h6 small,
+  h6 .small, .h6 small,
+  .h6 .small {
+    display: block;
+    padding: 0.5em 0;
   }
 }
 .swatch {
