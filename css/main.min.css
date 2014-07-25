@@ -3158,6 +3158,8 @@ pre[class*="language-"] {
 @media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
   .doc-photo {
     background-image: url(../assets/images/hoodie_logo_small@2x.png);
+    -webkit-background-size: 95px 95px;
+    background-size: 95px;
   }
 }
 @media screen and (max-width: 700px) {
